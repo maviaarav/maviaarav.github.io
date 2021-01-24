@@ -1,15 +1,26 @@
 score = 0;
 cross = true;
-obstacleDur = 5;
+obstacleDur = 4;
 var scoreCont;
-audio = new Audio('game_audio.mp3')
+var obstacle;
 window.onload = () => {
   scoreCont = document.getElementById("scorecont");
+  obstacle = document.querySelector(".obstacle");
+  obstacle.style.animationDuration = obstacleDur + "s";
 };
+
+// Click Dion jump
+document.onclick = function(){
+   dino = document.querySelector(".dino");
+    dino.classList.add("animateDino");
+    setTimeout(() => {
+      dino.classList.remove("animateDino");
+    }, 500);
+}
 // Key Listener 
 document.onkeydown = function (e) {
   console.log("key code is:", e.keyCode);
-  if (e.keyCode === 38) {
+  if (e.keyCode === 38 || e.keyCode === 32) {
     dino = document.querySelector(".dino");
     dino.classList.add("animateDino");
     setTimeout(() => {
@@ -36,8 +47,7 @@ document.onkeydown = function (e) {
 // 
 setInterval(() => {
   dino = document.querySelector(".dino");
-  gameOver = document.querySelector(".gameOver");
-  obstacle = document.querySelector(".obstacle");
+  gameOver = document.querySelector(".gameOver");  
 
   dx = parseInt(window.getComputedStyle(dino, null).getPropertyValue("left"));
   dy = parseInt(window.getComputedStyle(dino, null).getPropertyValue("top"));
