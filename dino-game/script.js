@@ -1,6 +1,6 @@
 score = 0;
 cross = true;
-obstacleDur = 2.5;
+obstacleDur = 2;
 var scoreCont;
 var obstacle;
 window.onload = () => {
@@ -58,10 +58,14 @@ setInterval(() => {
   oy = parseInt(
     window.getComputedStyle(obstacle, null).getPropertyValue("top")
   );
+  console.log("Offset")
+  console.log(dx,ox)
+  console.log("Offset y")
+  console.log(dy,oy)
   offsetX = Math.abs(dx - ox);
   offsetY = Math.abs(dy - oy);
   //  console.log(offsetX, offsetY)
-  if (offsetX < 73 && offsetY < 113) {
+  if (offsetX < 50 && offsetY < 90) {
     gameOver .style.visibility = "visible";
     obstacle.classList.remove("obstacleAni");
 

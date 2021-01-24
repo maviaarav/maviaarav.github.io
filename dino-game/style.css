@@ -23,19 +23,20 @@ body{
     background-image: url('Hero.png');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 204px;
-    height: 204px;
+    width: 124px;
+    height: 124px;
     position: absolute;
     bottom:0;
     left: 12px;
 }
 
 .obstacle{
-    width: 183px;
-    height:123px; 
+    width: 123px;
+    height:70px; 
     background-image: url('dino1.png');
-    background-size: cover;
+    background-size: contain;
     position: absolute;
+    background-repeat: no-repeat;
     bottom: 0;
     left: 44vw;
    
