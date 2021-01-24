@@ -1,6 +1,6 @@
 score = 0;
 cross = true;
-obstacleDur = 4;
+obstacleDur = 2.5;
 var scoreCont;
 var obstacle;
 window.onload = () => {
