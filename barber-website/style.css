@@ -40,18 +40,72 @@
   color: #fff;
   border: .5px solid white;
   position: relative;
+  transition: color 0.5s;
   z-index: 1;
 }
 .banner-btn a span{
-  width: 50%;
+  width: 0;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background: #fff;
   z-index: -1;
-  transition: 0.5s  ;
+  transition: 0.5s;
 }
-.banner-btn a span:hover{
+.banner-btn a:hover span{
   width: 100%;
+}
+.banner-btn a:hover {
+  color: #000;
+}
+#sideNav{
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: #009688;
+  transition: 0.5s;
+  z-index: 2;
+}
+nav ul li{
+  list-style: none;
+  margin: 50px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+#menuBtn{
+  width: 50px;
+  height: 50px;
+  background: #009688;
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+#menuBtn img{
+  width: 20px;
+  margin-top: 15px;
+}
+@media screen and (max-width: 770px){
+  .banner-text h1{
+    font-size: 44px;
+  }
+  .banner-btn a{
+    display: block;
+    margin: 20px auto;
+  }
+  
+}
+
+/*-- feature --*/
+#feature{
+  width: 100%;
+  padding: 70px 0;
 }
