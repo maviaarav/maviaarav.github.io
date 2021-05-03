@@ -182,6 +182,101 @@ text-align: center;
   padding: 0 20px;
   text-align: initial;
 }
+
+/* --service-- */
+
+#service{
+  width: 100%;
+  padding: 70px 0;
+  background: #efefef;
+}
+.service-box{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.single-service{
+  flex-basis: 48%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+}
+.single-service img{
+  width: 100%;
+  border-radius: 7px;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0,0,0,0.5),#009688);
+  opacity: 0;
+  transition: 1s;
+}
+.single-service:hover .overlay{
+  opacity: 1;
+}
+.service-desc{
+  width: 80%;
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  left: 50%;
+  transition: 1s;
+  transform: translateX(-50%);
+}
+hr{
+  background: #fff;
+  height: 2px;
+  border: 0;
+  margin: 15px auto;
+  width: 60%;
+}
+.service-desc p{
+  font-size: 17px;
+}
+.single-service:hover .service-desc{
+  bottom: 40%;
+  opacity: 1;
+}
+@media screen and (max-width: 770px){
+  .single-service{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .service-desc p{
+    font-size: 12px;
+  }
+  hr{
+    margin: 5px auto;
+  }
+  .single-service:hover .service-desc{
+    bottom: 25% !important;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 770px){
   .title-text h1{
     font-size: 35px;
