@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>font</title>
+</head>
+<body>
+  <h1>What Can JavaScript Do?</h1>
+  <p id="demo">JavaScript can change the style of an HTML element.</p>
+  <button onclick="document.getElementById('demo').style.display='none' "> click me</button>
+  <button onclick="changeContent()"> show text</button>
+  <script>
+    function changeContent(){
+        document.getElementById('demo').style.display='block'
+        document.getElementById('demo').textContent='JavaScript can change the style of an HTML element.'
+      }
+  </script>
+</body>
+</html>
