@@ -9,7 +9,7 @@
   height: 100vh;
   overflow: hidden;
   padding: 0 0 0 360px;
-  background-color: lightgray;
+  background-color: white;
 }
 .side-nav{
   width: 360px;
@@ -56,9 +56,55 @@
 }
 .home-page{
   width: 100%;
+  display: block;
   height: 100vh;
-  border: 1px solid; 
+  border-top: 130px solid black;
 }
+.sign-in{
+  width: 150px;
+  height: 100px;
+  margin: -111px 0 0 1197px;
+  font-size: 20px;
+}
+.sign-in li  a{
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  width: 120px;
+  padding: 10px 14px;
+  position: relative;
+  cursor: pointer;
+}
+.sign-in li{
+  margin-left: 10px;
+}
+.sign-in li a:hover{
+  color: #0d74f5;
+  background-color: #fff;
+  transition: 1s;
+  border-radius: 4px;
+}
+.search-bar{
+  width: 100%;
+  max-width: 400px;
+  margin: -65px 0 0 773px;
+  background: rgba(255,255 ,255 ,0.2 );
+  display: flex;
+  border-radius: 60px;
+  padding: 10px 20px;
+  backdrop-filter: blur(4px) saturate(180%);
+}
+.search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  font-size: 17px;
+  color: #cac7ff;
+}
+
+
 @media only screen and (max-width: 600px){
   .side-nav{
     width: 100px;
