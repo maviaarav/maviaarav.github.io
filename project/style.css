@@ -103,26 +103,17 @@
   font-size: 17px;
   color: #cac7ff;
 }
-
-
-@media only screen and (max-width: 600px){
-  .side-nav{
-    width: 100px;
-  }
-  .logo-img{
-    display: block;
-    margin-bottom: 130px;
-  }
-  .logo{
-    display: none;
-  }
-  .nav li a p{
-    display: none;
-  }
-  .nav li a{
-    width: 50px;
-  }
-  .container{
-    padding: 0 0 0 100px;
-  }
+.btn{
+  width: 70px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 60px;
+  background-color: lightgrey;
 }
+.btn:hover{
+  color: white;
+  background-color: gray;
+  transition: 1s;
+  border: none;
+}
+
