@@ -1,6 +1,15 @@
 *{
   margin: 0;
+  font-family: sans-serif;
   padding: 0;
+}
+.loader{
+  background: black;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
 }
 .container{
   width: 100%;
@@ -66,15 +75,6 @@
   color: blue;
   text-decoration: none;
 }
-
-.loader{
-  background: black;
-  width: 100%;
-  overflow: hidden;
-  height: 100vh;
-  position: fixed;
-  z-index: 1;
-}
 .preloader{
   height: 100px;
   width: 100px;
@@ -88,6 +88,24 @@
   right: 0;
   border-radius: 50%;
   animation: spin 1.5s infinite linear;
+}
+.submit{
+    display: block;
+    margin: 18px 0 20px 145px;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    width: 70px;
+    text-align: center;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.submit:hover{
+  color: #fff;
+  transition: 1s;
+  background: rgb(237, 72, 13);
+  
 }
 @keyframes spin{
   100%{

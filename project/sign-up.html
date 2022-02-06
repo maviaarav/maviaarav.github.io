@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
-  <link rel="stylesheet" href="sign-in.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign In</title>
+  <link rel="stylesheet" href="sign-up.css">
+  <title>Sign up</title>
 </head>
 <body>
   <div class="loader">
@@ -15,10 +15,13 @@
   </div>
   <div class="container">
     <div class="form">
-      <h2>Log in</h2>
+      <h2>Sign Up</h2>
       <input type="email" placeholder="Enter your email" autocomplete="off" required>
-      <input type="password" placeholder="password" autocomplete="off" required>
-      <button type="submit" class="btn" onclick="btn()">Submit</button>
+      <input type="password" placeholder="Create new password" autocomplete="off" required>
+      <input type="text" placeholder="Enter your Number" autocomplete="off" required class="number" onclick="number()">
+      <input type="password" placeholder="Create new password" autocomplete="off" required>
+      <input type="text" placeholder="Enter OTP" autocomplete="off" required>
+      <a href="index.html" class="submit">Submit</a>
 
       <a href="sign-up.html" class="new-person">I'm new here</a> 
       <a href="" class="forget">Forget password</a>
@@ -26,16 +29,15 @@
 
     </div>
     </div>
-    
-  <script>
-    function btn(){
-      alert("kindly write correct email")
-    }
-  </script>
+    <script>
+      function btn(){
+        alert ("We are sending you a otp")
+      }
+    </script>
   <script>
     $(window).on('load',function(){
-      $(".loader").fadeOut(2000);
-      $(".container").fadeIn(2000);
+      $(".loader").fadeOut(1000);
+      $(".container").fadeIn(1000);
     })
   </script>
 </body>
