@@ -17,3 +17,30 @@
   background-color: #0d74f5;
   box-shadow: 0 3px 10px rgb(0,8,51,0.8);
 }
+.loader{
+  background: black;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+}
+.preloader{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border: 15px solid gray;
+  border-top: 15px solid #0d74f5;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  animation: spin 1.5s infinite linear;
+}
+@keyframes spin{
+  100%{
+    transform: rotate(360deg);
+  }
+}
