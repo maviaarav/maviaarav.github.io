@@ -75,6 +75,10 @@
   color: blue;
   text-decoration: none;
 }
+.Sign-up li{
+  margin: 6px 0 0 0;
+  list-style: none;
+}
 .preloader{
   height: 100px;
   width: 100px;

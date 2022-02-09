@@ -88,7 +88,7 @@
 .search-bar{
   width: 100%;
   max-width: 400px;
-  margin: -65px 0 0 773px;
+  margin: -65px 0 0 563px;
   background: rgba(255,255 ,255 ,0.2 );
   display: flex;
   border-radius: 60px;
@@ -138,4 +138,27 @@ h4{
   text-align: center;
   color: white;
   margin-top: -4px;
+}
+.sign-up{
+  font-size: 20px;
+  width: 150px;
+  height: 100px;
+  margin: -100px 0 0 1040px;
+  text-align: center;
+}
+.sign-up li a{
+  display: flex;
+  margin: 0px 0 0 10px;
+  color: #fff;
+  width: 130px;
+  padding: 10px 14px;
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+}
+.sign-up li a:hover{
+  color: #0d74f5;
+  background-color: #fff;
+  transition: 1s;
+  border-radius: 4px;
 }
