@@ -11,6 +11,42 @@
   position: fixed;
   z-index: 1;
 }
+.side-nav{
+  width: 350px;
+  height: 100%;
+  position: fixed;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+}
+.nav li a:hover{
+  color: #0d74f5;
+  background-color: #fff;
+  transition: 1s;
+  border-radius: 4px;
+}
+.logo{
+  display: block;
+  width: 150px;
+  margin-bottom: 130px;
+  cursor: pointer;
+}
+.nav{
+  list-style: none;
+  position: relative;
+}
+.nav  li{
+  padding: 10px 0;
+  text-decoration: none;
+}
+.nav a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 14px;
+  width: 70px;
+  display: flex;
+}
 .container{
   width: 100%;
   height: 100vh;
