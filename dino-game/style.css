@@ -1,8 +1,7 @@
-
 *{
     margin: 0;
-   padding:0;
-   font-family: sans-serif;
+    padding:0;
+    font-family: sans-serif;
 }
 body{
     background-color: red;
@@ -12,11 +11,10 @@ body{
     font-family: sans-serif;
 }
 .gameContainer{
- background-image: url('bg.png'); 
- background-size: cover;
- width: 100vw;
- height: 100vh;
- background-repeat: no-repeat;
+background-image: url('bg.png'); 
+background-size: cover;
+width: 100vw; height: 100vh;
+background-repeat: no-repeat;
 
 }
 .dino{
@@ -39,7 +37,6 @@ body{
     background-repeat: no-repeat;
     bottom: 0;
     left: 44vw;
-   
 }  
 
 .animateDino{
