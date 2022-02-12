@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  color: black;
+}
+.logo{
+  width: 160px;
+  margin: 8px 0 0 10px;
+}
+.border-top{
+  width: 100%;
+  height: 130px;
+  background-color: black;
+  margin: -45px 0 0 0;
+}
+#sidenav{
+  width: 250px;
+  height: 100vh;
+  background-color: #0d74f5;
+  position: fixed;
+  right: -250px; 
+  margin-top: -129px;
+  z-index: 2;
+  transition: 0.5s;
+}
+nav{
+  margin-top: 50px;
+}
+nav ul li {
+  list-style: none;
+  text-decoration: none;
+  padding: 24px 20px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color: lightgray;
+}
+#menubtn{
+  width: 50px;
+  height: 50px;
+  background-color: #0d74f5;
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+}
+#menubtn img{
+  width: 30px;
+  margin-top: 9px;
+}
