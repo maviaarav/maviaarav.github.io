@@ -19,7 +19,8 @@
 .border-top img{
   background-color: white;
   border-radius: 80px;
-  width: 96px;
+  width: 66px;
+  margin: 20px 0 0 7px;
   border: 1px solid gray;
   position: fixed;
 }
