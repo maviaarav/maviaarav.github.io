@@ -43,11 +43,12 @@
   .border-top img{
     width: 36px;
     position: fixed;
+    margin: 4px 0 0 4px;
   }
   .border-top h2{
     font-size: 20px;
     display: flex;
-    margin: 10px 0 0 40px;
+    margin: 10px 0 0 50px;
     position: fixed;
   }
 }
