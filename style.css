@@ -22,6 +22,7 @@
   width: 66px;
   margin: 20px 0 0 7px;
   border: 1px solid gray;
+  cursor: pointer;
   position: fixed;
 }
 .border-top  h2{
@@ -31,6 +32,7 @@
   font-size: 22px;
   color: white;
   text-decoration: none;
+  cursor: default;
   position: fixed;
 }
 @media  (max-width:800px){
