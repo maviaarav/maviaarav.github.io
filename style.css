@@ -23,7 +23,7 @@
   border: 1px solid gray;
   position: fixed;
 }
-.border-top  h2 a{
+.border-top  h2{
   margin: 39px 0 0 100px;
   display: flex;
   align-items: center;
@@ -31,4 +31,20 @@
   color: white;
   text-decoration: none;
   position: fixed;
+}
+@media  (max-width:800px){
+  .border-top{
+    position: fixed;
+    height: 60px;
+  }
+  .border-top img{
+    width: 36px;
+    position: fixed;
+  }
+  .border-top h2{
+    font-size: 20px;
+    display: flex;
+    margin: 10px 0 0 40px;
+    position: fixed;
+  }
 }
