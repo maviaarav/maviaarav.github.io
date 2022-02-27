@@ -76,7 +76,7 @@ a:hover{
 @media  (max-width:800px){
   .border-top{
     position: fixed;
-    height: 100px;
+    height: 90px;
   }
   .container{
     width: 100%;
@@ -117,6 +117,7 @@ nav ul{
   background: #333;
   overflow: hidden;
   width: 100%;
+  transition: max-height 1s;
 }
 nav ul li{
   display: block ;
@@ -129,7 +130,7 @@ a{
   .menu-icon{
     display: block;
     cursor: pointer;
-    margin: 10px;
+    margin: 20px;
     background-color: white;
   }
 }
