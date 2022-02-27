@@ -16,6 +16,18 @@
         <img src="github.png">
       </div>
         <h2>Maviaarav.github.io</h2>
+
+          <nav>
+            <ul id="nav-bar">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">About US</a></li>
+              <li><a href="">My Website</a></li>
+              <li><a href="">Contact Us</a></li>
+            
+            </ul>
+            
+          </nav>
+          <img src="nav-icon.png" class="menu-icon" onclick="menutoggle()">
             </div>
         </div>
       </div>
@@ -23,5 +35,18 @@
     </div>
     
   </div>
+  <script>
+      var navbar = document.getElementById ('nav-bar')
+      navbar.style.maxHeight = '0px'
+      function menutoggle(){
+        if(navbar.style.maxHeight == '0px')
+        {
+          navbar.style.maxHeight = '250px'
+        }
+        else{
+          navbar.style.maxHeight = "0px"
+        }
+      }
+  </script>
 </body>
 </html>
