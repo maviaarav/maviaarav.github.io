@@ -73,6 +73,12 @@ a:hover{
   float: right;
   display: none;
 }
+.heading {
+    display: none;
+}
+h1{
+  display: none;
+}
 @media  (max-width:800px){
   .border-top{
     position: fixed;
@@ -109,7 +115,7 @@ a:hover{
     left: 0;
     top: 10px;
     right: 0;
-}
+  }
 nav ul{
   position: absolute;
   top: 80px;
@@ -130,7 +136,14 @@ a{
   .menu-icon{
     display: block;
     cursor: pointer;
-    margin: 20px;
+    margin: -60px 20px 0 0px;
     background-color: white;
+  }
+  h1{
+    display: block;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    margin-top: 59px;
   }
 }
