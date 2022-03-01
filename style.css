@@ -79,7 +79,7 @@ a:hover{
 h1{
   display: none;
 }
-@media  (max-width:800px){
+@media  (max-width:900px){
   .border-top{
     position: fixed;
     height: 90px;
@@ -107,7 +107,6 @@ h1{
   .img-background img{
     width: 44px;
     height: 44px;
-    margin: -1px 0 0 157px;
     cursor: pointer;
     position: fixed;
     display: inline-block;
