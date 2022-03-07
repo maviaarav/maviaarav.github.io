@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.website-container{
+  width: 100%;
+  height: 100vh;
+  background-color: lightgrey;
+  display: flex;
+}
+.border-top{
+  width: 100%;
+  height: 90px;
+  background-color: #24292f;
+  position: fixed;
+  font-size: 12px;
+  font-weight: 600;
+  display: block;;
+}
