@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="https://img.icons8.com/material-rounded/24/000000/home.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/156f17ff04.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +29,9 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
+      </div>
+      <div class="loader" id="loader">
+        <div class="preloader" id="preloader"></div>
       </div>
     </div>
     <script>
@@ -74,6 +78,11 @@
         stars[4].style.color = '#ffd93b';
         emoji.style.transform = "translateX(-400px)";
       }
+      var loader = document.getElementById ('loader')
+      var preloader = document.getElementById ('preloader')
+      setTimeout(()=>{
+        loader.style.display = 'none';
+      },10*1000) 
     </script>
 </body>
 </html>
