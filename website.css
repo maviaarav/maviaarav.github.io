@@ -210,4 +210,12 @@ a{
     border-radius: 50%;
     border-width: 10px;
   }
+  .button{
+    width: 277px;
+    height: 277px;
+    margin-top: 170px;
+  }
+  h1{
+    display: none;
+  }
 }
