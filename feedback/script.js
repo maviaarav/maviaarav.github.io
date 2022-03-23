@@ -17,6 +17,7 @@ stars[1].onclick = function(){
   stars[2].style.color = "";
   stars[3].style.color = "";
   stars[4].style.color = "";
+  header.style.display = 'block';
   header.textContent = "It is bad"
 }
 stars[2].onclick = function(){
@@ -25,6 +26,7 @@ stars[2].onclick = function(){
   stars[2].style.color = "#ffd93b";
   stars[3].style.color = "";
   stars[4].style.color = "";
+  header.style.display = 'block';
   header.textContent = "It is good"
 }
 stars[3].onclick = function(){
@@ -32,6 +34,7 @@ stars[3].onclick = function(){
   stars[1].style.color = "#ffd93b";
   stars[2].style.color = "#ffd93b";
   stars[3].style.color = "#ffd93b";
+  header.style.display = 'block';
   stars[4].style.color = "";
   header.textContent = "It is very good"
 }
@@ -40,6 +43,7 @@ stars[4].onclick = function(){
   stars[1].style.color = "#ffd93b";
   stars[2].style.color = "#ffd93b";
   stars[3].style.color = "#ffd93b";
+  header.style.display = 'block';
   stars[4].style.color = "#ffd93b";
   header.textContent = "it's unbeliveble"
 }
