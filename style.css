@@ -9,4 +9,13 @@
   background-color: lightgray;
   color: white;
   display: flex;
+  overflow: hidden;
+}
+.nav-bar{
+  width: 100%;
+  height: 10vh;
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
