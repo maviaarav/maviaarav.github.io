@@ -31,15 +31,15 @@ h1{
   font-size: 20px;
   font-weight: 400;
   padding: 20px;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
 }
 .top_navbar img{
   margin-left: 40px;
 }
-
 .top_navbar a:hover{
-  background-color: white;
-  width: 70px;
   height: 20px;
-  overflow: hidden;
+  background-color: white;
+  color: black;
   border-radius: 10px;
 }
