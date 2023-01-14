@@ -18,7 +18,15 @@
   background: #10678a;
   color: white;
   font-family: Arial;
-
+}
+#navbar a{
+  cursor: default;
+  display: flex;
+  padding: 10px 0 0 0;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  justify-content: center;
 }
 #button-1{
   width: 100px;
@@ -27,7 +35,7 @@
   border-radius: 20px;
   border: none;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: -20px;
   font-size: 20px;
   cursor: pointer;
   box-shadow: 1px 1px 1px 1px #000000;
@@ -52,6 +60,7 @@
   background: #0a4d6a;
   transition: 0.5s;
 }
+
 #button-2{
   background: #10678a;
   border-radius: 20px;
