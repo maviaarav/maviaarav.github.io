@@ -32,7 +32,7 @@ h1{
   font-weight: 400;
   padding: 20px;
   overflow: hidden;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace; 
 }
 .top_navbar img{
   margin-left: 40px;

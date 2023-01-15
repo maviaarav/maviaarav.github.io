@@ -37,3 +37,25 @@
     box-shadow: 1px 0 19px 7px #13475c;
     display: none;
 }
+#button-2{
+  background: #10678a;
+  border-radius: 20px;
+  border: none;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#websites a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size:20px;
+  font-weight: 600;
+  transition: 1s;
+}
+#websites a:hover{
+  color: #08a4e1;
+}
