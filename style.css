@@ -94,19 +94,19 @@
 
 @media screen and (max-width: 500px){
     .container{
-        width: 500px;
-        height: 100vh;
         display: block;
         overflow: hidden;
         background-attachment: scroll;
         background-color: darkcyan;
     }
+
     .circle{
         width: 400px;
         height: 400px;
         background-color: orangered;
         float: right;
         margin: 50px 50px 0 0;
+
         box-shadow: 10px 10px 40px 40px rgb(17, 71, 71) ;
         display: flex;
         justify-content: center;
@@ -123,6 +123,6 @@
     }
     .paragraph{
         margin: 280px 0 0 -310px;
-    text-align: center;
+        text-align: center;
     }
 }
