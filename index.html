@@ -1,43 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" href="./My_Bussiness_website/img/icons8-home-64.png" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>User-page</title>
+    <link rel="shortcut icon" href="school.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website - Aarav Mavi</title>
 </head>
 <body>
-  <div class="container">
-    <div id="navbar">
-      <a href="">Grocer</a>
-      <button id="button-1" type="button" onclick="document.getElementById('menu').style.display='block'"><img src="menu.png" width="40px"></button>
+    <div class="container">
+        <div class="navbar">
+            <button type="button" id="btn" onclick="document.getElementById('menu_bar').style.display='block'">Menu</button>
+        </div>
+        <div id="menu_bar">
+            <button type="button" id="close-btn" onclick="document.getElementById('menu_bar').style.display='none'">Close</button>
+            <a href="#">School memories</a>
+            <a href="#">Friends</a>
+            <a href="#">My memories</a>
+            <a href="#">About me</a>
+        </div>
+        <div class="circle">
+            <img src="school.jpg" width="500px">
+        </div>
     </div>
-    
-    <div id="menu">
-      <button id="button-2"  type="submit" onclick="document.getElementById('menu').style.display='none' "><img src="cancel.png" width="40px"></button>
-      <a href="index.html">Home</a>
-      <a href="websitepage.html"> Our Websites</a>
-      <a href="">About US</a>
-      <a href="">Conatct US</a>
-    </div>
-    <div class="right-img">
-      
-    </div>
-    <h1><span class="auto-typed"></span> </h1>
-  
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-      var typed = new Typed(".auto-typed",{
-        strings: ['Lets Buy  something new!.....'],
-        typeSpeed: 110,
-        loop: false
-      })
-    </script>
-  
-  </div>
 </body>
 </html>
-
