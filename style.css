@@ -106,23 +106,15 @@
         background-color: orangered;
         float: right;
         margin: 50px 50px 0 0;
-
         box-shadow: 10px 10px 40px 40px rgb(17, 71, 71) ;
         display: flex;
         justify-content: center;
-    
+        border-image-repeat: repeat;
     }
     .circle img{
-        width: 200px;
-        height: 200px;
-        border: 2px solid black;
-        border-bottom-left-radius: 50px;
-        border-top-right-radius: 100px;
-        box-shadow: 10px 10px 40px 40px yellow;
-        margin: 50px 0 0 104px;
+        display: none;
     }
     .paragraph{
-        margin: 280px 0 0 -310px;
-        text-align: center;
+        nav-down: auto;
     }
 }
