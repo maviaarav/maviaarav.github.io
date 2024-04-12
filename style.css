@@ -22,99 +22,55 @@
     border-bottom-right-radius: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
-.navbar :hover{
-    background-color: darkcyan;
-    transition: 0.6s;
-}
-#btn{
-    width: 100px;
-    height: 50px;
-    border-radius: 50px;
-    cursor: pointer;
-    border: none;
-}
-
-#menu_bar{
-    width: 400px;
-    height: 100vh;
-    background-color: rgb(11, 59, 59);
-    display: none;
-    overflow: hidden;
-}
-#menu_bar :hover{
-    background-color: darkcyan;
-    color: aqua;
-}
-#menu_bar a{
+.navbar a{
     text-decoration: none;
-    display: flex;
-    justify-content: center;
     color: white;
-    transition: 1s;
-    margin-top: 70px;
-    padding: 40px;
+    padding: 20px;
+    font-size: 15px;
 }
-#close-btn{
-    width: 100px;
-    height: 50px;
-    border-radius: 50px;
+button{
+    font-size: 15px;
+    padding: 10px;
     border: none;
-    color: darkcyan;
-    background-color: rgb(17, 71, 71);
-    float: right;
-    margin: 4px;
-    cursor: pointer;
-    float: left;
+    background-color: darkcyan;
+    border-radius: 20px;
+    color: white;
 }
-.circle{
-    width: 700px;
-    height: 700px;
-    background-color: orangered;
-    float: right;
-    margin: 50px 50px 0 0;
-    box-shadow: 10px 10px 40px 40px rgb(17, 71, 71) ;
-    display: flex;
-    justify-content: center;
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.navbar a:hover {
+    background-color: lightgray;
+}
+.content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .content {
+    
+    display: block;
+}
+.dropdown .content{
+    font-size: 16px;  
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border: none;
 
-}
-.circle img{
-    height: 500px;
-    border: 2px solid black;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 100px;
-    box-shadow: 10px 10px 40px 40px yellow;
-    margin: 50px 0 0 104px;
-}
-.paragraph{
-    margin: 584px 0 0 -600px;
-    text-align: center;
-}
-
-@media screen and (max-width: 500px){
-    .container{
-        display: block;
-        overflow: hidden;
-        background-attachment: scroll;
-        background-color: darkcyan;
-    }
-
-    .circle{
-        width: 400px;
-        height: 400px;
-        background-color: orangered;
-        float: right;
-        margin: 50px 50px 0 0;
-        box-shadow: 10px 10px 40px 40px rgb(17, 71, 71) ;
-        display: flex;
-        justify-content: center;
-        border-image-repeat: repeat;
-    }
-    .circle img{
-        display: none;
-    }
-    .paragraph{
-        nav-down: auto;
-    }
 }
