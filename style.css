@@ -10,6 +10,7 @@
     text-align: center;
     color: darkslategray;
     font-weight: 100;
+    z-index: 1;
 }
 button{
     font-size: 17px;
