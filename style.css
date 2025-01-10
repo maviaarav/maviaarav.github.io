@@ -14,7 +14,7 @@
 }
 #navbar{
   width: 100%;
-  height: 8vh;
+  height: 12vh;
   background: #10678a;
   color: white;
   font-family: Arial;
@@ -76,4 +76,9 @@
   display: flex;
 
   color: #0a4d6a;
+}
+@media screen and (max-width: 800px) {
+  .auto-typed{
+    font-size: 20px;
+  }
 }
