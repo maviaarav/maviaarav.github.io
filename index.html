@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Dreams</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remind</title>
 </head>
 <body>
-    <div class="nav" id="navbar">
-        <div class="dropdown">
-            <button type="menu" id="btn" onclick="dropdown()"><img src="menu.png"></button>
-        </div>
+    <div class="container">
+        <button type="menu" id="btn" onclick="navbar()"><img src="menu.png"></button>
+        <button type="menu" id="cross" onclick="up()"><img src="cross.png"></button>
     </div>
-    <div id="crossup">
-        <button type="menu" id="cross" onclick="cross()"><img src="cross.png"></button>
-    </div>
-   
-    <script src="script.js"></script>
+    <nav id="nav">
+
+    </nav>
+
 </body>
+<script src="script.js"></script>
 </html>
