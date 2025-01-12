@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Remind</title>
 </head>
 <body>
     <div class="container">
-        <button type="menu" id="btn" onclick="navbar()"><img src="menu.png"></button>
-        <button type="menu" id="cross" onclick="up()"><img src="cross.png"></button>
-    </div>
-    <nav id="nav">
-        <div class="ui">
+        <nav id="navbar">
             <a href="">Home</a>
             <a href="">Contact Us</a>
             <a href="">Channel</a>
             <a href="">About Us</a>
+        </nav>
+        <div id="button">
+            <button type="menu" id="btn-down"><img src="menu.png" id="myimage"></button> <!-- Fix the button type -->
         </div>
-    </nav>
-
+    </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
