@@ -4,7 +4,8 @@ const button = document.getElementById('btn-down');
 
 // Add an event listener directly to the button
 button.addEventListener('click', () => {
-    nav.classList.toggle('hidden'); 
+    nav.classList.toggle('hidden');
+    nav.style.display='flex' 
     // button.style.display='none';
     const navHeight = nav.offsetHeight;
     if (navHeight== 0){

@@ -68,6 +68,25 @@ border: none;
 #btn-down img{
     width: 60px;
 }
+.background{
+    width: 95%;
+    height: 75vh;
+    margin-top: 200px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin-left: 30px;
+    text-transform: capitalize;
+    text-align: left;
+}
+.background p{
+    width: 50%;
+    height: 100vh;
+    font-size: 30px;
+    color: white;
+}
+.auto{
+    color: rgb(0, 255, 217);
+}
 @media screen and (max-width: 670px) {
     #navbar {
         background-color: blue;
