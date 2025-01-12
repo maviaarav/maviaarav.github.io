@@ -36,12 +36,12 @@
 #navbar a:hover{
     background-color: rgb(27, 27, 167);
     color: white;
-<<<<<<< Updated upstream
+
     border-radius: 10px;
-=======
+
     font-size: 20px;
     flex-direction: column;
->>>>>>> Stashed changes
+
     transition: 0.5s;
 }
 #navbar.hidden {

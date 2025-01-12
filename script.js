@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 const nav = document.getElementById('navbar');
 const person = document.getElementById('button')
 const button = document.getElementById('btn-down');
@@ -23,7 +22,6 @@ button.addEventListener('click', () => {
     }
 
 });
-=======
 btn = document.getElementById('btn');
 nav = document.getElementById('nav');
 cross = document.getElementById('cross');
@@ -41,4 +39,3 @@ function up() {
     cross.style.display = 'none';
     btn.style.display = 'block';
 }
->>>>>>> Stashed changes
