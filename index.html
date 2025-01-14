@@ -2,44 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Remind</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-
         <nav id="navbar">
-            <a href="">Home</a>
-            <a href="">Contact Us</a>
-            <a href="">Channel</a>
-            <a href="">About Us</a>
+            <a href="#">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="#">Channel</a>
+            <a href="#">About Us</a>
+
         </nav>
         <div id="button">
-            <button type="menu" id="btn-down"><img src="cross.png" id="myimage"></button> 
+            <button id="btn-down"><img src="cross.png" id="myimage"></button>
         </div>
         <div class="background">
-            <p> <span class="auto"></span>. Chilling with friends can be as simple as hanging out at someone's house, catching up on life with laughter and shared stories. Maybe you order takeout, put on some music, and play a board game. Or perhaps it's a beautiful day and you head to the park, soak up the sun, and just enjoy each other's company. The key is to be present, relax, and relish the carefree moments that create lasting memories.
-               <br> Made By:- Aarav Mavi</p>
+            <h1><Span class="header"></Span></h1 >
+            <h1><Span class="Second_header"></Span></h1 >
+            <p>
+                <span class="auto"></span>. Chilling with friends can be as simple as hanging out at someone's house, catching up on life with laughter and shared stories...
+                <br> Made By: Aarav Mavi
+            </p>
         </div>
-    </div>
-
     </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        let typed = new Typed('.auto',{
-            strings:['Hello, My name is Aarav Mavi','Sometimes the best plans are the ones that take no planning at all'],
+        let typed = new Typed('.auto', {
+            strings: ['Hello, My name is Aarav Mavi', 'Sometimes the best plans are the ones that take no planning at all'],
             typeSpeed: 50,
             backSpeed: 50,
             loop: true
+        });
+        let type = new Typed('.header', {
+            strings: ['Hello', 'Hi there', 'Greetings', 'Hey', 'Howdy', 'Warm greetings', 'Welcome aboard', 'Glad to have you here', 'A warm welcome', 'Great to see you', 'Step right in', 'Enter the world of [Your Name]', 'You"ve'
+],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+        let new_type = new Typed('.Second_header',{
+            strings : ['My name is Aarav Mavi, and this is my very first webpage. I"m thrilled to take the first steps into the world of web development, and I can’t wait to share my journey with you.'],
+            typeSpeed : 80,
+            loop: false
         })
     </script>
 </body>

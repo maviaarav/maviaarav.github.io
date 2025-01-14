@@ -10,20 +10,20 @@
     overflow: hidden;
     display: block;
     align-items: center;
+    flex-direction: column;
 }
 #navbar{
     background-color: blue;
-    position: fixed;
-    width: 95%;
-    height: 150px; 
+    position: fixed; /* Stays fixed at the top */
+    width: 100%;
+    height: 150px;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    transition: height 0.3s ease;
-    transition: 1s;
-    box-shadow: 2px 0px 20px 5px black;
+    transition: height 0.3s ease, background-color 1s;
+    box-shadow: 2px 0px 20px 5px black; 
 }
 #navbar a{
     color: white;
@@ -40,7 +40,7 @@
     border-radius: 10px;
 
     font-size: 20px;
-    flex-direction: column;
+
 
     transition: 0.5s;
 }
@@ -54,10 +54,10 @@
     background-color: blue;
     position: relative;
     float: right;
-    box-shadow: 35px 0px 20px 7px black;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
 }
 #btn-down{
     width: 60px;
@@ -88,11 +88,32 @@ border: none;
     height: 100vh;
     font-size: 30px;
     color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .auto{
     color: rgb(0, 255, 217);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-@media screen and (max-width: 670px) {
+.header{
+    color: red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: 200;
+    font-size: 40px;
+}
+.Second_header{
+    color: orangered;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: 200;
+    font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+    body {
+        background-size: auto; /* Allows natural scrolling of the background */
+        background-attachment: scroll; /* Ensures the background scrolls */
+        background-repeat: no-repeat;
+        background-position: top; /* Adjusts position for better view on smaller screens */
+    }
     #navbar {
         background-color: blue;
         position: fixed;
@@ -120,8 +141,11 @@ border: none;
         background: linear-gradient(130deg, blue, cyan);
         overflow: hidden;
         display: block;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         align-items: center;
+        background-attachment: scroll;
     }
+
     #button{
         width: 5%;
         height: 150px;
@@ -141,14 +165,19 @@ border: none;
        color: white;
        margin-right: 60px;
        cursor: pointer; 
-       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: none;
-        
+        border: none; 
     }
+    #btn
     .background p{
         width: 60%;
         height: 100vh;
         font-size: 20px;
         color: white;
+    }
+}
+@media screen and (max-width: 480px) {
+    body {
+        background-size: contain; /* Fits the background to the screen dimensions */
+        background-position: center;
     }
 }
