@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(120deg, rgb(10, 10, 215), rgb(21, 240, 240));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects{
+    width: 500px;
+    height: 600px;
+    backdrop-filter: blur();
+    background: linear-gradient(120deg, blue, black);
+    position: relative;
+    box-shadow: 2px 2px 20px 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects a{
+    color: white;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    padding: 10px;
+}
+.projects :hover{
+    background-color: rgb(16, 16, 57);
+    border-radius: 20px;
+    transition: 0.5s;
+}

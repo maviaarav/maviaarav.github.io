@@ -8,12 +8,10 @@ button.addEventListener('click', () => {
 
     const navHeight = nav.offsetHeight;
     if (navHeight== 0){
-        person.style.backgroundColor='Blue'
         const imageElement = document.getElementById('myimage')
         imageElement.src = 'cross.png'
     }
     else{
-        person.style.background= 'none'
         person.style.transition='1s'
         const imageElement = document.getElementById('myimage')
         imageElement.src = 'menu.png'

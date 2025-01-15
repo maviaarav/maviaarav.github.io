@@ -5,12 +5,25 @@
 }
 .container{
     width: 100%;
-    min-height: 300vh; 
+    min-height: 100vh; 
     background: linear-gradient(130deg, blue, cyan);
     display: flex;
     flex-direction: column;
     align-items: center;
     background-attachment: scroll;
+
+    background-repeat: repeat;
+    overflow: scroll;
+}
+.webimg{
+    width: 30%;
+    border-radius: 50px;
+    padding: 20px;
+}
+.description{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
 }
 #navbar{
     background-color: blue;
@@ -51,8 +64,6 @@
 #button{
     width: 5%;
     height: 150px;
-    background-color: blue;
-    position: relative;
     float: right;
     display: flex;
     align-items: center;
@@ -79,21 +90,22 @@ border: none;
     margin-top: 200px;
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    margin-left: 30px;
+    padding: 10px;
     text-transform: capitalize;
     text-align: left;
 }
 .background p{
-    width: 50%;
+    width: 100%;
     height: auto;
     font-size: 30px;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.auto{
-    color: rgb(0, 255, 217);
+.autotyper{
+    color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
 }
 .header{
     color: red;
@@ -144,15 +156,22 @@ border: none;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         align-items: center;
         background-attachment: scroll;
+        overflow-y: scroll;
     }
-
+    .webimg{
+        width: 90%;
+        border-radius: 50px;
+    }
+    .autotyper{
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+    }
     #button{
         width: 5%;
         height: 150px;
-        background-color: blue;
         position: relative;
         float: right;
-        box-shadow: 35px 0px 20px 7px black;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -160,7 +179,6 @@ border: none;
     #btn-down{
         width: 60px;
         height: 60px;
-       background-color: rgb(12, 52, 145);
        border-radius: 10px;
        color: white;
        margin-right: 60px;
@@ -179,9 +197,6 @@ border: none;
         font-size: 25px;
     }
     .Second_header{
-        font-size: 20px;
-    }
-    .auto{
         font-size: 20px;
     }
 

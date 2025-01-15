@@ -23,19 +23,13 @@
             <h1><Span class="header"></Span></h1 >
             <p><Span class="Second_header"></Span>
             </p>
-
-            <p><Span class="auto"></Span></p>
+            <img src="first_page.webp"  width="600px" class="webimg">
+            <h1 class="description"><Span class="autotyper"></Span></h1>
         </div>
     </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        let typed = new Typed('.auto', {
-            strings: ['Sometimes the best plans are the ones that take no planning at all Chilling with friends can be as simple as hanging out at someone"s house, catching up on life with laughter and shared stories.'],
-        
-
-            typeSpeed: 50,
-        });
         let type = new Typed('.header', {
             strings: ['Hello', 'Hi there', 'Greetings', 'Hey', 'Howdy', 'Warm greetings', 'Welcome aboard', 'Glad to have you here', 'A warm welcome', 'Great to see you', 'Step right in', 'Enter the world of Aarav Mavi', 'You"ve'
 ],
@@ -47,6 +41,10 @@
             strings : ['My name is Aarav Mavi, and this is my very first webpage. I"m thrilled to take the first steps into the world of web development, and I can’t wait to share my journey with you.'],
             typeSpeed : 80,
 
+        })
+        let typer = new Typed('.autotyper',{
+            strings: ['This website is my first step into the exciting world of web development. It’s a showcase of my learning journey, where creativity meets technology. Built with passion and determination, this project is a reflection of my dedication to exploring the digital space.'],
+            typeSpeed: 150,
         })
     </script>
 </body>
