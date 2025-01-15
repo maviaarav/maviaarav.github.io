@@ -5,7 +5,7 @@ const button = document.getElementById('btn-down');
 // Add an event listener directly to the button
 button.addEventListener('click', () => {
     nav.classList.toggle('hidden');
-    nav.style.display='flex' 
+
     const navHeight = nav.offsetHeight;
     if (navHeight== 0){
         person.style.backgroundColor='Blue'
@@ -14,7 +14,6 @@ button.addEventListener('click', () => {
     }
     else{
         person.style.background= 'none'
-        person.style.boxShadow='none'
         person.style.transition='1s'
         const imageElement = document.getElementById('myimage')
         imageElement.src = 'menu.png'
