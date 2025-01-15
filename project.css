@@ -12,13 +12,14 @@
     align-items: center;
 }
 .projects{
-    width: 500px;
-    height: 600px;
+    width: 300px;
+    height: 400px;
     backdrop-filter: blur();
     background: linear-gradient(120deg, blue, black);
     position: relative;
     box-shadow: 2px 2px 20px 2px black;
-    display: flex;
+    display: flex
+;
     align-items: center;
     justify-content: center;
 }
@@ -33,4 +34,17 @@
     background-color: rgb(16, 16, 57);
     border-radius: 20px;
     transition: 0.5s;
+}
+@media screen and (max-height ='768px') {
+    .projects{
+        width: 90%;
+        height: 600px;
+        backdrop-filter: blur();
+        background: linear-gradient(120deg, blue, black);
+        position: relative;
+        box-shadow: 2px 2px 20px 2px black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
