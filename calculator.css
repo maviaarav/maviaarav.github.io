@@ -1,19 +1,51 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+*{
     margin: 0;
+    padding: 0;
 }
-.calculator {
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(100deg, black, black);
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+@property --angles{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+.calculator{
     width: 300px;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
     background: linear-gradient(130deg, green, cyan);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.calculator::after, .calculator::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+   background-image: conic-gradient(from var(--angles), transparent 70%, #ff4545, #00ff99, #006aff,#ff0095,#ff4545);
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
+    bottom: 0;
+    padding: 5px;
+    z-index: -1;
+    border-radius: 20px;
+    animation: 3s spin linear infinite;
+}
+@keyframes spin {
+    from{
+        --angles: 0deg;
+    }
+    to{
+        --angles: 360deg;
+    }
 }
 .screen {
     width: 100%;
