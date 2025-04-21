@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Games</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Toc Toe</h1>
+        <div class="game">
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" id="reset">Reset</button>
+            <button type="button" id="GamerOver" onclick="gameOver()">GameOver</button>
+        </div>
+        <div class="score">
+            <h2>Score</h2>
+            <div class="player">
+                <h2 id="playerO"></h2>
+                <p id="ScoreO">0</p>
+            </div>
+            <div class="player">
+                <h2 id="PlayerX"></h2>
+                <p id="ScoreX">0</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
