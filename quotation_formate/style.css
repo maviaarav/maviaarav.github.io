@@ -141,6 +141,9 @@ margin: 10px;
   margin: 5px;
   top: 0;
 }
+#Company{
+  font-size: 56px;
+}
 @media print{
   #Print_btn{
     display: none;
