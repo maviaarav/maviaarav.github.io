@@ -20,6 +20,13 @@ let formattedDate = currentDate.toLocaleDateString('en-IN', {
     day: '2-digit'
 });
 console.log(formattedDate);
+function isIOS() {
+    return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  }
+  
+  if (isIOS()) {
+    document.getElementById('Print_btn').style.display = 'none';
+  }
 
 date.innerText = formattedDate;
 date.setAttribute('style', 'font-weight: bolder; font-size: 20px;')
