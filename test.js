@@ -1,8 +1,15 @@
-for (let i = 0; i <=100; i++){
-  console.log(i +' Chal Hat')
+let i =0 
+let print = ()=>{
+  return console.log('looping...');
+  
 }
-f = 0
-// do {
-//   f++;
-//   console.log(f)
-// } while (f<=5);
+let loop = ()=>{
+  for (i = 0;i <10; i++){
+    print()
+    if (i === 5) {
+      console.log('looping stopped at 5');
+      break; // Exit the loop when i is 5
+    }
+  }
+}
+loop();

@@ -32,7 +32,7 @@ const winPatterns = [
     [2, 4, 6]  // Diagonal from top-right to bottom-left
 ];
 
-boxes.forEach((boxes) => {
+boxes.forEach(boxes => {
     boxes.addEventListener('click', () => {
         console.log('box clicked');
         if (turnO) {
