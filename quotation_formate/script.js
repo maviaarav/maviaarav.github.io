@@ -23,6 +23,11 @@ console.log(formattedDate);
 
 date.innerText = formattedDate;
 date.setAttribute('style', 'font-weight: bolder; font-size: 20px;')
+function handlePrint() {
+    setTimeout(function() {
+      window.print();
+    }, 2000); // slight delay ensures it works better on iOS
+  }
 
 submit.addEventListener('click', function () {
     let address1 = address_input_1.value;
