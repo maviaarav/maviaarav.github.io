@@ -8,6 +8,7 @@ let nameinput = document.querySelector('#name_input');
 let address_input_1 = document.querySelector('#address_input1');
 let address_input_2 = document.querySelector('#address_input2');
 let address_input_3 = document.querySelector('#address_input3');
+let print_btn = document.querySelector('#Print_btn');
 let date = document.querySelector('#date');
 let submit = document.querySelector('#submit');
 let noc = document.querySelector('#noc_input');
@@ -19,6 +20,7 @@ let formattedDate = currentDate.toLocaleDateString('en-IN', {
     day: '2-digit'
 });
 console.log(formattedDate);
+
 date.innerText = formattedDate;
 date.setAttribute('style', 'font-weight: bolder; font-size: 20px;')
 

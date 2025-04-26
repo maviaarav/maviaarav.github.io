@@ -129,6 +129,23 @@ margin: 10px;
 #submit:active{
   background-color: #004085;
 }
+#Print_btn{
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin: 5px;
+  top: 0;
+}
+@media print{
+  #Print_btn{
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .registration {
     width: 80vmin;
