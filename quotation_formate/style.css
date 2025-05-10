@@ -64,7 +64,7 @@ font-weight: bolder;
 h4{
 font-weight: lighter;
 font-size: 20px;
-position: absolute;
+position: relative;
 left: 20px;
 text-align: left;
 }
@@ -144,9 +144,153 @@ margin: 10px;
 #Company{
   font-size: 56px;
 }
+#preview{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.cell-form{
+  width: 80vmin;
+  height: auto;
+  background-color: white;
+  box-shadow: -2px 0px 20px 20px rgb(21 46 16 / 24%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+  text-align: center;
+  display: none;
+}
+.form-group2{
+  display: flex;
+  flex-direction: column;
+}
+#next_submit{
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#next_submit:hover{
+  background-color: #0056b3;
+}
+#next_submit:active{
+  background-color: #004085;
+}
+#pr-btn{
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+#pr-btn:hover{
+  background-color: #0056b3;
+}
+#pr-btn:active{
+  background-color: #004085;
+}
+#table{
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    table-layout: auto; /* let it auto-adjust */
+    position: relative; /* DO NOT use absolute */
+    transform: none; /* Remove transform */
+}
+table, th, td {
+  border:2px solid black;
+  border-collapse: collapse;
+  white-space: normal; 
+  height: auto;
+  width: 5%;
+  text-align: left;
+}
+.table-contents{
+  width: 80vmin;
+  height: auto;
+  background-color: white;
+  box-shadow: -2px 0px 20px 20px rgb(21 46 16 / 24%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+  text-align: center;
+  display: none;
+}
+.form-group2 input{
+  width: 90%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px;
+  font-size: 16px;
+}
+#table-btn{
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+
+}
+#table-btn:hover{
+  background-color: #0056b3;
+}
+#table-btn:active{
+  background-color: #004085;
+}
+#table-back{
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+#table-back:hover{
+  background-color: #0056b3;
+}
+#table-back:active{
+  background-color: #004085;
+}
 @media print{
   #Print_btn{
     display: none;
+  }
+  #preview{
+    display: none;
+  }
+  #addElement{
+    display: none;
+  }
+  #table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    table-layout: auto; /* let it auto-adjust */
+    position: relative; /* DO NOT use absolute */
+    transform: none; /* Remove transform */
+
+  }
+
+  .table-body td, .table-body th {
+    font-size: 14px;
   }
 }
 @media (max-width: 768px) {
@@ -166,6 +310,19 @@ margin: 10px;
   justify-content: center;
   align-items: center;
 }
+.form-group2{
+  margin: 10px 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .form-group label {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
   .form-group input {
     width: 100%;
     font-size: 20px;
@@ -194,5 +351,14 @@ margin: 10px;
 
   .email {
     font-size: 14px;
+  }
+  table{
+    width: auto;
+    border-collapse: collapse;
+    margin: auto;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 150%);
   }
 }

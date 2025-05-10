@@ -21,6 +21,7 @@
     <div class="date">
         
         <h2 class="Data">Date: <label id="date"></label> </h2>
+        <button type="button" id="preview">Preview</button>
     </div>
     <div class="container">
         <h3>To</h3 style="font-weight: bolder;">
@@ -31,6 +32,19 @@
     </div>
     <h4>Dear Sir, <br> 
         With reference to the above mentioned subject, we are offering you our proposal for <label id="NOC-Issued"></label> NOC.</h4>
+        <button id="addElement">ADD ROW</button>
+        <table style="width:100%" id="table">
+            <tr>
+                <th>Sr No</th>
+                <th>Heading</th>
+                <th>Capacity</th>
+                <th>Expenses</th>
+                <th>KVA</th>
+                    <tbody class="table-body">
+                    </tbody>
+            </tr>
+            
+          </table>
    
 </div>
 
@@ -46,6 +60,28 @@
     </div>
     
 </div>
+    <div class="cell-form">
+        <h1>Proposal</h1>
+        <div class="form-group">
+            <input type="text" id="heading_input" placeholder="First Row">
+            <input type="text" id="capacity_input" placeholder="Enter the Capacity">
+            <input type="text" id="expenses_input" placeholder="Enter the Expenses">
+            <input type="text" id="KVA" placeholder="Enter the KVA">
+            <button type="submit" id="next_submit">Next</button>
+            <button type="submit" id="pr-btn">Back</button>
+        </div>
+    </div>
+    <div class="table-contents">
+        <h1>Table Contents</h1>
+        <div class="form-group">
+        <input type="text" id="heading_input" placeholder="First Row">
+        <input type="text" id="capacity_input" placeholder="Enter the Capacity">
+        <input type="text" id="expenses_input" placeholder="Enter the Expenses">
+        <input type="text" id="KVA" placeholder="Enter the KVA">
+        <button type="submit" id="table-btn">Next</button>
+        <button type="submit" id="table-back">Back</button>
+    </div>
+    </div>
 
 <script src="script.js"></script>
 </body>
