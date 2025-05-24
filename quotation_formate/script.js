@@ -37,20 +37,33 @@ let Add_Element = ()=>{
     let table_data2 = document.createElement('td');
     let table_data3 = document.createElement('td');
     let table_data4 = document.createElement('td');
+    let table_data5 = document.createElement('td');
+    let btn = document.getElementById('btn');
+    btn.textContent = 'delete';
+    btn.setAttribute('class', 'btn btn-danger');
+    btn.setAttribute('style', 'margin-left: 20px;');
+    btn.addEventListener('click', function () {
+        table_row.remove();
+        no--;
+        let rows = document.querySelectorAll('.table-body tr');
+        rows.forEach((row, index) => {
+            row.cells[0].innerText = index + 1;
+                if(table_row.childElementCount > 1){
+        btn.setAttribute('style', 'display: none;');
+    }
+        });
+    });
+
+
     table_data1.innerText = no++;
     table_data1.setAttribute('style', 'border: 2px solid black; text-align: center; font-size: 20px; font-weight: bolder;');
     table_data2.innerHTML = heading4.value;
     table_row.appendChild(table_data1);
     table_row.appendChild(table_data2);
+    table_row.appendChild(table_data3);
+    table_row.appendChild(table_data4);
+    table_row.appendChild(table_data5);
     tbody.appendChild(table_row);
-    if(turn1 == false){
-        heading1.innerText = heading4.value;
-        heading1.setAttribute('style', 'font-weight: bolder; font-size: 20px;');
-        turn1 = true;
-    }else if(turn1 == true){
-        heading2.innerText = '';
-        heading2.setAttribute('style', 'font-weight: bolder; font-size: 20px;');
-    }
    })
 }
 Add_Element();
