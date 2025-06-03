@@ -1,83 +1,73 @@
-let name = document.getElementById("name-input");
-let address = document.getElementById("address");
-let Voltage = document.getElementById("Voltage");
-let Phase = document.getElementById("Phase");
-let Current = document.getElementById("Current");
-let Wiring = document.getElementById("Wiring");
-let Purpose = document.getElementById("Purpose");
-let submit = document.getElementById("submit");
-let next = document.getElementById("next");
+console.log("hello world");
+container = document.querySelector(".container");
+date = document.querySelector("#date");
+date2 = document.querySelector("#date2");
+btn = document.querySelector("#btn");
+images = document.querySelector(".images");
+Next = document.querySelector("#Next");
+nameInput = document.querySelector("#nameInput");
+addressInput = document.querySelector("#addressInput");
+valtInput = document.querySelector("#valtInput");
+phaseInput = document.querySelector("#phaseInput");
+currentInput = document.querySelector("#currentInput");
+issueInput = document.querySelector("#issueInput");
+Name = document.querySelector("#name");
+Address = document.querySelector("#Address");
+Valt = document.querySelector("#Valt");
+Phase = document.querySelector("#Phase");
+Current = document.querySelector("#Current");
+Issue = document.querySelector("#Issue");
+let add = document.getElementById("add");
+let table = document.querySelector("table");
+    add.addEventListener('click',function(){
+        console.log("add row");
+        let newrow = document.createElement("tr");
+        number = prompt("Enter the number of cells in this row:");
+        for (let i = 0; i < number; i++) {// Change 4 to the number of cells you want in each row
+            let cell = document.createElement("td");
+            cell.textContent = prompt('Enter row name ' + (i + 1) + ' :');
+            newrow.appendChild(cell);
+        }
+        table.appendChild(newrow);
 
-let form = document.querySelector('.form');
-let content = document.querySelector('.content');
-let pribtn = document.querySelector('#print');
-let prebtn = document.querySelector('#preview');
 
-let name2 = document.getElementById("name");
-let address2 = document.getElementById("Address");
-let voltage2 = document.getElementById("voltage");
-let phase2 = document.getElementById("phase");
-let current2 = document.getElementById("current");
-let wiring2 = document.getElementById("wiring");
-let purpose2 = document.getElementById("purpose");
+    })
+Next.addEventListener("click", function() {
+    Name.innerHTML = nameInput.value;
+    Address.innerHTML = addressInput.value;
+    Valt.innerHTML = valtInput.value;
+    Phase.innerHTML = phaseInput.value;
+    Current.innerHTML = currentInput.value;
+    Issue.innerHTML = issueInput.value;
+    inputs = document.querySelectorAll("input");
+    inputs.forEach(input => {
+       if (input.value === "") {
+           input.style.border = "5px solid red";
+           confirm("Please fill all the fields"); // make it one time only
+              input.focus();
+              input.style.border = "5px solid red";
+               container.style.display = "flex";
+                images.style.display = "none";
+                btn.style.display = "none";
+       } 
+       else {
+           input.style.border = "5px solid green";
+               container.style.display = "none";
+                images.style.display = "inline-flex";
+                btn.style.display = "flex";
 
-function handlePrint() {
-    document.querySelector('.form').style.display = 'none';
-    pribtn.style.display = 'none';
-    prebtn.style.display = 'none';
-    setTimeout(() => {
-        window.print();
-        pribtn.style.display = 'block';
-        prebtn.style.display = 'block';
-    }, 100);
-}
+       }
+    });
 
-function result() {
-    name2.innerHTML = name.value;
-    address2.innerHTML = address.value;
-    voltage2.innerHTML = Voltage.value;
-    phase2.innerHTML = Phase.value;
-    current2.innerHTML = Current.value;
-    wiring2.innerHTML = Wiring.value;
-    purpose2.innerHTML = Purpose.value;
-
-    document.getElementById("name-data").innerText = name.value;
-    document.getElementById("address-data").innerText = address.value;
-    document.getElementById("voltage-data").innerText = Voltage.value;
-    document.getElementById("phase-data").innerText = Phase.value;
-    document.getElementById("current-data").innerText = Current.value;
-    document.getElementById("wiring-data").innerText = Wiring.value;
-    document.getElementById("purpose-data").innerText = Purpose.value;
-}
-
-function preview() {
-    form.style.display = "block";
-    content.style.display = "none";
-    pribtn.style.display = "none";
-}
-
-function empty() {
-    if (name.value === "" || address.value === "" || Voltage.value === "" || Phase.value === "" || Current.value === "" || Wiring.value === "" || Purpose.value === "") {
-        alert("Please fill all the fields");
-        let inputs = [name, address, Voltage, Phase, Current, Wiring, Purpose];
-        inputs.forEach((input) => {
-            input.style.border = input.value === "" ? "4px solid red" : "4px solid green";
-        });
-        return false;
-    }
-    return true;
-}
-
-next.addEventListener("click", () => {
-    if (empty()) {
-        form.style.display = "none";
-        content.style.display = "block";
-        pribtn.style.display = "block";
-        prebtn.style.display = "block";
-        result();
-    }
+})
+let currentDate = new Date();
+date.innerHTML = currentDate.toLocaleDateString('en-IN', {
+    year: 'numeric',
+    month: 'long',
+    day: '2-digit'
 });
-
-submit.addEventListener("click", () => {
-    empty();
+date2.innerHTML = currentDate.toLocaleDateString('en-IN', {
+   year: 'numeric',
+    month: 'long',
+    day: '2-digit',
 });

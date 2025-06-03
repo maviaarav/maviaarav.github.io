@@ -3,66 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BL-Form</title>
     <link rel="stylesheet" href="style.css">
+    <title>BL-Form</title>
 </head>
 <body>
-    <div class="container">
-        <button id="print" onclick="handlePrint()">Print</button>
-        <button id="preview" onclick="preview()">Previous Form</button>
-
+<div class="container">
+    <div class="registration">
+        <h1>BL-Form</h1>
+        <input type="text" id="nameInput" placeholder="Enter Your Name">
+        <input type="text" id="addressInput" placeholder="Enter Your Address">
+        <input type="text" id="valtInput" placeholder="Enter Voltage">
+        <input type="text" id="phaseInput" placeholder="Enter Phase">
+        <input type="text" id="currentInput" placeholder="Enter Current Type">
+        <input type="text" id="issueInput" placeholder="Enter Issue Type">
+        <button id="Next">Next</button>
+    </div>
+ </div>
+    <button id="btn" onclick="print()">Click me</button>
+    <div class="images">
+    <div class="page1">
         <div class="content">
-            <img src="FRONT_Page.jpg" id="front_img">
             <label id="name"></label>
             <label id="Address"></label>
-            <label id="voltage"></label>
-            <label id="phase"></label>
-            <label id="current"></label>
-            <label id="wiring"></label>
-            <label id="purpose"></label>
+            <label id="Valt"></label>
+            <label id="Phase"></label>
+            <label id="Current"></label>
+            <label id="Wiring">Armoured Cable</label>
+            <label id="Issue"></label>
+        </div>
+        <div class="table">
+            <button id="add">Add</button>
+            <table>
 
-
-            <!-- New Lift Info Table -->
-            <table id="lift-info-table">
-                <thead>
-                    <tr>
-                        <th>S No</th>
-                        <th>MAKE</th>
-                        <th>Job No</th>
-                        <th>Lift Capacity (kg)</th>
-                        <th>Person Capacity</th>
-                        <th>Motor Cap. (KW)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>labe
-                        <td>HYBON</td>
-                        <td>HBN/MRL/2291</td>
-                        <td>450</td>
-                        <td>6</td>
-                        <td>3.7KW</td>
-                    </tr>
-                </tbody>
             </table>
         </div>
-
-        <div class="form">
-            <h1>BL-Form</h1>
-            <div class="form-group">
-                <input type="text" id="name-input" placeholder="Enter Name">
-                <input type="text" id="address" placeholder="Enter Full Address">
-                <input type="text" id="Voltage" placeholder="Voltage">
-                <input type="text" id="Phase" placeholder="Phase">
-                <input type="text" id="Current" placeholder="Current Type (AC/DC)">
-                <input type="text" id="Wiring" placeholder="Wiring">
-                <input type="text" id="Purpose" placeholder="Commercial/Residential">
-                <button type="submit" id="submit">Submit</button>
-                <button type="submit" id="next">Next</button>
-            </div>
-        </div>
+         <img src="img/Page-1.jpg" >
     </div>
+   <div class="page2">
+       <img src="img/Page-2.jpg">
+       <div class="dates">
+        <h1 id="date"></h1>
+       </div>
+       <div class="date-2">
+        <h1 id="date2"></h1>
+       </div>
+   </div>
+ 
 
-    <script src="script.js"></script>
+    <img src="img/Page-3.jpg">
+    </div>
+   <script src="script.js"></script>
 </body>
 </html>

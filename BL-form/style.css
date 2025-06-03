@@ -1,65 +1,35 @@
-* {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container {
+.images{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    display: none;
+    align-items: center;
+}
+.container{
     width: 100%;
     height: 100vh;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#print, #preview {
-    margin: 10px;
-    padding: 10px;
-    background: #1fd21f;
-    border: 1px solid;
-    cursor: pointer;
-    display: none;
-}
-#print { position: absolute; left: 0; }
-#preview { position: absolute; right: 0; }
-
-#front_img {
-    height: 100vh;
-    position: relative;
-    z-index: -1;
-}
-.content { display: none; }
-
-#name, #Address, #voltage, #phase, #current, #wiring, #purpose {
-    position: absolute;
-    left: 50%;
-    font-size: 10px;
-    font-weight: lighter;
-    color: black;
-    z-index: 1;
-}
-#name { top: 22%; }
-#Address { top: 27.5%; text-align: left; }
-#voltage { top: 37%; }
-#phase { top: 39%; }
-#current { top: 41%; }
-#wiring { top: 44%; }
-#purpose { top: 47%; }
-
-.form {
-    width: 80vmin;
+.registration{
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
-    box-shadow: -2px 0px 20px 20px rgba(21, 46, 16, 0.24);
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    padding: 20px;
-    margin-top: 50px;
-    text-align: center;
-    display: block;
+    box-shadow: 0px 3px 16px 0px black;
+    padding: 10px;
 }
-.form-group {
-    margin: 10px 0;
-    padding: 20px;
-}
-.form-group input {
+.registration input {
     width: 90%;
     border: 1px solid #ccc;
     padding: 10px;
@@ -68,45 +38,137 @@
     margin: 10px;
     font-size: 16px;
 }
-.form-group input:focus {
-    border: 4px solid #007BFF;
-}
-#lift-info-table{
+#Next{
     width: 90%;
-    margin: 20px auto;
-    border-collapse: collapse;
-}
-#submit, #next {
+    font-size: 16px;
+    padding: 10px;
     background-color: #007BFF;
     color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
+    border: 1px solid #007BFF;
     cursor: pointer;
-    width: 95%;
+    border-radius: 10px;
 }
-#next { top: 10px; position: relative; }
-
-table {
+.registration input:focus {
+    border: 4px solid #007BFF;
+}
+#btn{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px;
+    float: right;
+    background-color: lightgrey;
+    color: black;
+    border: ipx solid gray;
+    border-radius: 2px;
+    cursor: pointer;
+    display: none;
+}
+.content{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: absolute;
+    top: 8.25%;
+    left: 50%;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    gap: 20px;
+}
+.regirstration{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.dates{
+    width: 20%;
+    position: absolute;
+    left: 20%;
+    margin-top: 16%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.date-2{
+    width: 20%;
+    height: 12vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 25%;
+    font-size: 14px;
+    margin-top: 55%;
+}
+#date{
+    font-size: 24px;
+}
+.table{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 21%;
+    left: 37%;
+}
+table{
+    width: 100%;
     border-collapse: collapse;
-    margin: 20px auto;
-    width: 90%;
+    border: 1px solid black;
 }
-table, th, td {
-    border: 1px solid #000;
-    padding: 8px;
+th, td{
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
 }
-
-@media print {
-    #print, #preview, .form {
+@media print{
+    .images{
+        margin-top: -90px;
+    }
+    #btn{
         display: none;
     }
-    #name, #Address, #voltage, #phase, #current, #wiring, #purpose {
-        font-size: 16px;
+        .container{
+        display: none;
     }
+    .content{
+        position: absolute;
+    }
+    .dates{
+            width: 20%;
+    position: absolute;
+    left: 15%;
+    margin-top: 19.5%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .date-2{
+    width: 20%;
+    height: 12vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 18%;
+    font-size: 14px;
+    margin-top: 68%;
 }
-@media only screen and (max-width: 600px) {
-    #name, #Address, #voltage, #current, #phase, #wiring, #purpose {
-        left: 70%;
+}
+@media screen and (max-width: 600px){
+    .images{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+
+    
 }
