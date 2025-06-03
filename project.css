@@ -12,16 +12,16 @@ body{
     overflow-y: scroll;
 }
 .projects{
-    width: 300px;
+     width: 300px;
     height: 400px;
     background: linear-gradient(120deg, blue, black);
     position: relative;
-    box-shadow: 2px 2px 20px 2px black;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    flex-direction: column;
 }
 .projects a{
     color: white;
