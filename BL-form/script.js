@@ -18,7 +18,9 @@ Phase = document.querySelector("#Phase");
 Current = document.querySelector("#Current");
 Issue = document.querySelector("#Issue");
 let add = document.getElementById("add");
+let del_btn = document.querySelector("#delete");
 let table = document.querySelector("table");
+
     add.addEventListener('click',function(){
         console.log("add row");
         let newrow = document.createElement("tr");
@@ -29,7 +31,17 @@ let table = document.querySelector("table");
             newrow.appendChild(cell);
         }
         table.appendChild(newrow);
-
+    })
+    del_btn.addEventListener('click', function() {
+        console.log('delete row');
+        let rowIndex = prompt("Enter the row number to delete (starting from 1):");
+        rowIndex = parseInt(rowIndex) - 1; // Convert to zero-based index
+        if (rowIndex >= 0 && rowIndex < table.rows.length) {
+            table.deleteRow(rowIndex);
+            alert("Row deleted successfully.");
+        } else {
+            alert("Invalid row number.");
+        }
 
     })
 Next.addEventListener("click", function() {
