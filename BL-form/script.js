@@ -20,6 +20,12 @@ Issue = document.querySelector("#Issue");
 let add = document.getElementById("add");
 let del_btn = document.querySelector("#delete");
 let table = document.querySelector("table");
+let back_btn = document.querySelector("#back-btn");
+let drop_view = document.querySelector("#drop-view");
+let signatureInput = document.querySelector("#signatureInput");
+let signature = document.querySelector(".signature");
+let signatureImage = document.querySelector("#signatureImage");
+let paragraph = document.querySelector("#paragraph");
 
     add.addEventListener('click',function(){
         console.log("add row");
@@ -51,7 +57,8 @@ Next.addEventListener("click", function() {
     Phase.innerHTML = phaseInput.value;
     Current.innerHTML = currentInput.value;
     Issue.innerHTML = issueInput.value;
-    inputs = document.querySelectorAll("input");
+    inputs = [nameInput, addressInput, valtInput, phaseInput, currentInput, issueInput];
+
     inputs.forEach(input => {
        if (input.value === "") {
            input.style.border = "5px solid red";
@@ -72,6 +79,13 @@ Next.addEventListener("click", function() {
     });
 
 })
+back_btn.addEventListener("click", function() {
+    console.log("back button clicked");
+    container.style.display = "flex";
+    images.style.display = "none";
+    btn.style.display = "none";
+    
+})
 let currentDate = new Date();
 date.innerHTML = currentDate.toLocaleDateString('en-IN', {
     year: 'numeric',
@@ -83,3 +97,12 @@ date2.innerHTML = currentDate.toLocaleDateString('en-IN', {
     month: 'long',
     day: '2-digit',
 });
+
+signatureInput.addEventListener("change", uploadimages );
+
+function uploadimages() {
+    let files = signatureInput.files[0];
+    let imgurl = URL.createObjectURL(files);
+    signatureImage.src = imgurl;
+    paragraph.style.display = "none";
+}

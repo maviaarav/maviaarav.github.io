@@ -64,6 +64,13 @@
     cursor: pointer;
     display: none;
 }
+#back-btn{
+    cursor: pointer;
+    position: relative;
+    background: none;
+    border: 5px solid #007BFF;
+    border-radius: 50%;
+}
 .content{
     width: 50%;
     height: 400px;
@@ -126,12 +133,46 @@ th, td{
     padding: 10px;
     text-align: center;
 }
+#delete{
+    padding: 5px;
+    background: none;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#add{
+    padding: 5px;
+    background: none;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.signature{
+    width: 40%;
+    background-repeat: no-repeat;
+    height: auto;
+    /* border: 4px dashed #007BFF; */
+    position: relative;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    bottom: 68vmax;
+    cursor: pointer;
+}
+#drop-view{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
 @media print{
     .images{
         margin-top: -90px;
-    }
-    #btn{
-        display: none;
     }
         .container{
         display: none;
@@ -158,6 +199,15 @@ th, td{
     left: 18%;
     font-size: 14px;
     margin-top: 68%;
+}
+#back-btn{
+    display: none;
+}
+#add{
+    display: none;
+}
+#delete{
+    display: none;
 }
 }
 @media screen and (max-width: 600px){

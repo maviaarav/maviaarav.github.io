@@ -17,11 +17,38 @@
             justify-content: center;
             background: linear-gradient(to right, blue, cyan);
         }
+        #drop-area{
+            width: 500px;
+            height: 300px;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        #img-view{
+         background-color: pink;
+         width: 100%;
+         height: 100vh;
+        }
+        #drop_view{
+            width: 80%;
+            height: 80%;
+            border: 2px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <input type="text" id="email_id">
+    
+        <label for="input-file" id="drop-area">
+                  <input type="file" id="input-file" accept="image/*" hidden>
+            <div id="drop_view">
+                <p>Drag and drop an image here <br>or click to select one</p>
+            </div>
+        </label>
     </div>
 </body>
 <script src="test.js"></script>

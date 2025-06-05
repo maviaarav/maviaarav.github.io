@@ -21,6 +21,7 @@
  </div>
     <button id="btn" onclick="print()">Click me</button>
     <div class="images">
+        <button id="back-btn"><img src="./img/back.png"></button>
     <div class="page1">
         <div class="content">
             <label id="name"></label>
@@ -49,9 +50,17 @@
         <h1 id="date2"></h1>
        </div>
    </div>
- 
-
-    <img src="img/Page-3.jpg">
+   <div class="page3">
+     <img src="img/Page-3.jpg">
+     <label class="signature">
+        <input type="file" id="signatureInput" accept="image/*" hidden>
+        <div id="drop-view">
+            <img src="./upload.png" id="signatureImage" alt="Signature Image">
+            <p id="paragraph">Drag and drop your signature here <br>Or click to select one</p>
+        </div>
+     </label>
+   </div>
+   
     </div>
    <script src="script.js"></script>
 </body>
