@@ -120,8 +120,9 @@
     width: 50%;
     height: auto;
     position: absolute;
-    top: 21%;
+    top: 19.8%;
     left: 37%;
+    font-size: 10px;
 }
 table{
     width: 100%;
@@ -209,6 +210,13 @@ th, td{
 #delete{
     display: none;
 }
+#signatureImage{
+    margin-top: 40%;
+}
+.table{
+    top: 19.8%;
+    font-size: 11px;
+}
 }
 @media screen and (max-width: 600px){
     .images{
@@ -218,7 +226,4 @@ th, td{
         flex-direction: column;
         align-items: center;
     }
-
-
-    
 }
